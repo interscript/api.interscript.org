@@ -3,6 +3,9 @@
   "name": "interscript-api",
   "main": "src/index.ts",
   "compatibility_date": "2026-08-01",
+  // The engine's node loaders are lazily imported; nodejs_compat makes
+  // those lazy imports tolerable in the Workers runtime.
+  "compatibility_flags": ["nodejs_compat"],
   // Production route. Staging deploys (CI: push to main) replace this
   // with the staging route via `--config wrangler.staging.jsonc`.
   "routes": [
