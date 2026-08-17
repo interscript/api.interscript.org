@@ -7,7 +7,7 @@
     "dev": "wrangler dev"
   },
   "dependencies": {
-    "@interscript/api-worker": "0.0.0-software-not-yet-published"
+    "@interscript/api-worker": "github:interscript/api#88e4f80"
   },
   "devDependencies": {
     "wrangler": "^4.0.0"

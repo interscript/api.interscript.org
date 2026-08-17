@@ -8,6 +8,15 @@
   "routes": [
     { "pattern": "api.interscript.org/*", "custom_domain": false }
   ],
+  // Bundled map corpus: 291 static asset files served from the edge
+  // cache (immutable per deploy); the ASSETS binding is the software's
+  // map loader. Full-corpus detect needs a paid Workers CPU limit
+  // (first call warms ~seconds; cached afterward) — set in the dashboard
+  // or via "limits": { "cpu_ms": 30000 } if your plan supports it.
+  "assets": {
+    "directory": "./node_modules/@interscript/api-worker/maps",
+    "binding": "ASSETS"
+  },
   "vars": {
     // Software knobs (defaults live in the software package):
     // "ML_INDEX_URL": "https://raw.githubusercontent.com/interscript/ml-models/main/models.yaml"
