@@ -1,0 +1,16 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "interscript-api",
+  "main": "src/index.ts",
+  "compatibility_date": "2026-08-01",
+  // Production route. Staging deploys (CI: push to main) replace this
+  // with the staging route via `--config wrangler.staging.jsonc`.
+  "routes": [
+    { "pattern": "api.interscript.org/*", "custom_domain": false }
+  ],
+  "vars": {
+    // Software knobs (defaults live in the software package):
+    // "ML_INDEX_URL": "https://raw.githubusercontent.com/interscript/ml-models/main/models.yaml"
+  },
+  "observability": { "enabled": true }
+}
