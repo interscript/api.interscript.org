@@ -7,7 +7,7 @@
     "dev": "wrangler dev"
   },
   "dependencies": {
-    "@interscript/api-worker": "git+https://github.com/interscript/api.git#a929c2f"
+    "@interscript/api-worker": "git+https://github.com/interscript/api.git#8440275"
   },
   "devDependencies": {
     "wrangler": "^4.0.0"
