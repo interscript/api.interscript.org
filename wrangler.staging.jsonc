@@ -1,0 +1,14 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "interscript-api-staging",
+  "main": "src/index.ts",
+  "compatibility_date": "2026-08-01",
+  "compatibility_flags": ["nodejs_compat"],
+  // Staging never claims production routes: workers.dev preview URL only.
+  "workers_dev": true,
+  "assets": {
+    "directory": "./node_modules/@interscript/api-worker/maps",
+    "binding": "ASSETS"
+  },
+  "observability": { "enabled": true }
+}

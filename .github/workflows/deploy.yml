@@ -16,7 +16,7 @@ jobs:
       - run: npm install
       # Staging only: the workers.dev preview URL, never the production
       # route. Production flips exclusively via a v* tag.
-      - run: npx wrangler versions upload --name interscript-api-staging
+      - run: npx wrangler deploy --config wrangler.staging.jsonc
         env:
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
