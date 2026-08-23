@@ -21,8 +21,7 @@
     "binding": "ASSETS"
   },
   "vars": {
-    // Software knobs (defaults live in the software package):
-    // "ML_INDEX_URL": "https://raw.githubusercontent.com/interscript/ml-models/main/models.yaml"
+    "ML_ENDPOINT": "https://ronaldtse--interscript-inference-web.modal.run"
   },
   "observability": { "enabled": true }
 }
