@@ -10,5 +10,8 @@
     "directory": "./node_modules/@interscript/api-worker/maps",
     "binding": "ASSETS"
   },
+  "vars": {
+    "ML_ENDPOINT": "https://ronaldtse--interscript-inference-web.modal.run"
+  },
   "observability": { "enabled": true }
 }
