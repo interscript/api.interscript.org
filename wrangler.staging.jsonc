@@ -7,7 +7,7 @@
   // Staging never claims production routes: workers.dev preview URL only.
   "workers_dev": true,
   "assets": {
-    "directory": "./node_modules/@interscript/api-worker/maps",
+    "directory": "./maps/maps",
     "binding": "ASSETS"
   },
   "vars": {

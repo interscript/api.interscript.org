@@ -17,7 +17,7 @@
   // (first call warms ~seconds; cached afterward) — set in the dashboard
   // or via "limits": { "cpu_ms": 30000 } if your plan supports it.
   "assets": {
-    "directory": "./node_modules/@interscript/api-worker/maps",
+    "directory": "./maps/maps",
     "binding": "ASSETS"
   },
   "vars": {
