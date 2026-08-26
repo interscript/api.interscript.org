@@ -3,11 +3,13 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "deploy": "wrangler deploy",
-    "dev": "wrangler dev"
+    "deploy": "npm run fetch:maps && wrangler deploy",
+    "dev": "wrangler dev",
+    "fetch:maps": "node scripts/fetch-maps-artifact.mjs 2.5.0 maps",
+    "deploy:staging": "npm run fetch:maps && wrangler deploy --config wrangler.staging.jsonc"
   },
   "dependencies": {
-    "@interscript/api-worker": "git+https://github.com/interscript/api.git#21697f8"
+    "@interscript/api-worker": "^1.0.0"
   },
   "devDependencies": {
     "wrangler": "^4.0.0"
