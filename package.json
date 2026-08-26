@@ -5,7 +5,7 @@
   "scripts": {
     "deploy": "npm run fetch:maps && wrangler deploy",
     "dev": "wrangler dev",
-    "fetch:maps": "node scripts/fetch-maps-artifact.mjs 2.4.3 maps",
+    "fetch:maps": "node scripts/fetch-maps-artifact.mjs 2.5.0 maps",
     "deploy:staging": "npm run fetch:maps && wrangler deploy --config wrangler.staging.jsonc"
   },
   "dependencies": {
