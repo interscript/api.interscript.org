@@ -9,7 +9,7 @@
     "deploy:staging": "npm run fetch:maps && wrangler deploy --config wrangler.staging.jsonc"
   },
   "dependencies": {
-    "@interscript/api-worker": "1.0.2"
+    "@interscript/api-worker": "1.1.0"
   },
   "devDependencies": {
     "wrangler": "^4.0.0"
