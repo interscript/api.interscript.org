@@ -5,11 +5,11 @@
   "scripts": {
     "deploy": "npm run fetch:maps && wrangler deploy",
     "dev": "wrangler dev",
-    "fetch:maps": "node scripts/fetch-maps-artifact.mjs 2.5.1 maps",
+    "fetch:maps": "node scripts/fetch-maps-artifact.mjs 2.5.2 maps",
     "deploy:staging": "npm run fetch:maps && wrangler deploy --config wrangler.staging.jsonc"
   },
   "dependencies": {
-    "@interscript/api-worker": "1.4.1"
+    "@interscript/api-worker": "1.4.2"
   },
   "devDependencies": {
     "wrangler": "^4.0.0",

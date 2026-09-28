@@ -51,8 +51,8 @@ const manifest = JSON.parse(
 );
 if (manifest.schema !== "interscript.maps.ir.v1")
   throw new Error(`unexpected artifact schema ${manifest.schema}`);
-if (manifest.count !== 289)
-  throw new Error(`expected 289 maps, got ${manifest.count}`);
+if (manifest.count !== 293)
+  throw new Error(`expected 293 maps (289 systems + 4 libraries), got ${manifest.count}`);
 
 await writeFile(resolve(outDir, ".artifact-version"), `${version}\n`);
 console.log(
