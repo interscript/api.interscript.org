@@ -12,6 +12,10 @@
     "@interscript/api-worker": "1.4.1"
   },
   "devDependencies": {
-    "wrangler": "^4.0.0"
+    "wrangler": "^4.0.0",
+    "sharp": "^0.35.4"
+  },
+  "overrides": {
+    "sharp": "^0.35.4"
   }
 }
