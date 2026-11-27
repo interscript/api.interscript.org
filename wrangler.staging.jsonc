@@ -2,7 +2,7 @@
   "$schema": "node_modules/wrangler/config-schema.json",
   "name": "interscript-api-staging",
   "main": "src/index.ts",
-  "compatibility_date": "2026-08-01",
+  "compatibility_date": "2026-11-27",
   "compatibility_flags": ["nodejs_compat"],
   // Staging never claims production routes: workers.dev preview URL only.
   "workers_dev": true,

@@ -2,7 +2,7 @@
   "$schema": "node_modules/wrangler/config-schema.json",
   "name": "interscript-api",
   "main": "src/index.ts",
-  "compatibility_date": "2026-08-01",
+  "compatibility_date": "2026-11-27",
   // The engine's node loaders are lazily imported; nodejs_compat makes
   // those lazy imports tolerable in the Workers runtime.
   "compatibility_flags": ["nodejs_compat"],
